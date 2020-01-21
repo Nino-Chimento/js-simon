@@ -1,19 +1,27 @@
-var listaNumeri = [];
+var listaNumeri = [1,2,3,4,5];
 var listaNumeriUtente = [];
+var punteggio = 0;
+var listaNumeriIndovinati = [];
 // creo lista numeri da msotrare
-for (var i = 0; i < 5; i++) {
-  listaNumeri.push(getRandomInt(1,50))
-}
+// for (var i = 0; i < 5; i++) {
+//   listaNumeri.push(getRandomInt(1,50))
+// }
 alert(listaNumeri);
-console.log(inArray(listaNumeri,5));
+// inizio funzione asincrona
 setTimeout(function () {
-
   for (var i = 0; i < 5; i++) {
     var numeroUtente = parseInt(prompt("inserisci un numero visto in precedenza "));
     listaNumeriUtente.push(numeroUtente);
-    console.log(listaNumeriUtente);
+
   }
-}, 3000);
+  for (var i = 0; i < listaNumeriUtente.length; i++) {
+    if (inArray(listaNumeri,listaNumeriUtente[i])) {
+      console.log("nino");
+    }
+  }
+  console.log(listaNumeriIndovinati,punteggio);
+}, 1000);
+
 
 
 
