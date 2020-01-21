@@ -12,7 +12,7 @@ alert(listaNumeri);
 setTimeout(function () {
   for (var i = 0; i < 5; i++) {
       var numeroUtente = parseInt(prompt("inserisci un numero visto in precedenza "));
-    while (inRange(1,50,numeroUtente)== false) {
+    while (inRange(1,50,numeroUtente)== false || inArray(listaNumeriUtente,numeroUtente)) {
       numeroUtente = parseInt(prompt("inserisci un numero visto in precedenza compreso tra 1 e 50 "));
     }
     listaNumeriUtente.push(numeroUtente);
