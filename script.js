@@ -24,19 +24,18 @@ setTimeout(function () {
       punteggio++
     }
   }
-  console.log(listaNumeriIndovinati,punteggio);
-}, 1000);
+  alert(" i numeri indovinati sono"+" "+ listaNumeriIndovinati);
+  alert(" hai indovinato"+" "+ punteggio+" numeri")
+}, 30000);
 // inizio funzioni
 function inArray(array,num) {
   for (var i = 0; i < array.length; i++) {
     if (array[i] == num) {
       return true;
     }
-    else {
-      return false
-    }
   }
 }
+
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
