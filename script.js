@@ -16,7 +16,8 @@ setTimeout(function () {
   }
   for (var i = 0; i < listaNumeriUtente.length; i++) {
     if (inArray(listaNumeri,listaNumeriUtente[i])) {
-      console.log("nino");
+      listaNumeriIndovinati.push(listaNumeriUtente[i])
+      punteggio++
     }
   }
   console.log(listaNumeriIndovinati,punteggio);
