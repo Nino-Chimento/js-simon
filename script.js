@@ -5,7 +5,9 @@ for (var i = 0; i < 5; i++) {
   listaNumeri.push(getRandomInt(1,50))
 }
 alert(listaNumeri);
+console.log(inArray(listaNumeri,5));
 setTimeout(function () {
+
   for (var i = 0; i < 5; i++) {
     var numeroUtente = parseInt(prompt("inserisci un numero visto in precedenza "));
     listaNumeriUtente.push(numeroUtente);
@@ -27,7 +29,16 @@ setTimeout(function () {
 
 
 
-
+function inArray(array,num) {
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] == num) {
+      return true;
+    }
+    else {
+      return false
+    }
+  }
+}
 
 
 
