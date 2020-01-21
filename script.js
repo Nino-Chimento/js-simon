@@ -7,10 +7,12 @@ var listaNumeriIndovinati = [];
 //   listaNumeri.push(getRandomInt(1,50))
 // }
 alert(listaNumeri);
+console.log(inRange (5,1,10));
 // inizio funzione asincrona
 setTimeout(function () {
   for (var i = 0; i < 5; i++) {
     var numeroUtente = parseInt(prompt("inserisci un numero visto in precedenza "));
+
     listaNumeriUtente.push(numeroUtente);
 
   }
@@ -22,22 +24,7 @@ setTimeout(function () {
   }
   console.log(listaNumeriIndovinati,punteggio);
 }, 1000);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// inizio funzioni
 function inArray(array,num) {
   for (var i = 0; i < array.length; i++) {
     if (array[i] == num) {
@@ -48,22 +35,16 @@ function inArray(array,num) {
     }
   }
 }
-
-
-
-
-
-
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min)) + min; //Il max è escluso e il min è incluso
 }
-// function quest(){
-//   for (var i = 0; i < 5; i++) {
-//     var numeroUtente = parseInt(prompt("INserisci un numero visto in precedenza "))
-//     var listaNumeriUtente = [];
-//     listaNumeriUtente.push(numeroUtente);
-//   }
-//   return listaNumeriUtente
-// }
+function inRange (num,min,max){
+  if (num =>min && num <= max) {
+    return true
+  }
+  else {
+    return false
+  }
+}
