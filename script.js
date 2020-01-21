@@ -1,11 +1,11 @@
-var listaNumeri = [1,2,3,4,5];
+var listaNumeri = [];
 var listaNumeriUtente = [];
 var punteggio = 0;
 var listaNumeriIndovinati = [];
 // creo lista numeri da msotrare
-// for (var i = 0; i < 5; i++) {
-//   listaNumeri.push(getRandomInt(1,50))
-// }
+for (var i = 0; i < 5; i++) {
+  listaNumeri.push(getRandomInt(1,50))
+}
 alert(listaNumeri);
 
 // inizio funzione asincrona
